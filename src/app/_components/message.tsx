@@ -9,7 +9,6 @@ export type MessageProps = {
   content?: string;
   // system
   action?: "left" | "joined";
-  instanceId?: string;
 };
 
 export const Message = ({
@@ -18,7 +17,6 @@ export const Message = ({
   name,
   content,
   action,
-  instanceId,
 }: MessageProps) => {
   const [currentTime, setCurrentTime] = useState<string>("");
 
